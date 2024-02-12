@@ -15,57 +15,89 @@
 
 
 
-<nav>
-
-<ul class="list1">
-    <div class="container" onclick="myFunction(this)">
+  <nav>
+    <!--NAVBAR-->
+    <ul class="list1">
+      <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-<li class="link-underline">
-  <a href="index.html">ACASĂ</a>
-</li>
-<li class="link-underline">
-  <a href="despre-noi.html">DESPRE
-    NOI</a>
-</li>
-<div>
-  <img class="logo" src="images/Logo.svg">
-</div>
-<li class="link-underline">
-  <a href="meniu.html">MENIU</a>
-</li>
-<li class="link-underline">
-  <a href="contacte.html"
-    >CONTACTE</a>
-</li>
-</ul>
+      <li class="link-underline">
+        <a href="index.html">ACASĂ</a>
+      </li>
+      <li class="link-underline">
+        <a href="despre-noi.html">DESPRE
+          NOI</a>
+      </li>
+      <div>
+        <img class="logo" src="images/Logo.svg">
+      </div>
+      <li class="link-underline">
+        <a href="meniu.html">MENIU</a>
+      </li>
+      <li class="link-underline">
+        <a href="contacte.html">CONTACTE</a>
+      </li>
+    </ul>
 
-<img src="./images/svg1.svg" class="curved">
+    <img src="./images/svg1.svg" class="curved">
 
 
-</nav>
+  </nav>
 
-<script src="events.js"></script>
 
-<div class="backgroundImg">
 
-  <img src="images/img3.jpg" class="cover">
 
-</div>
-<div class = "centered">
-<div class="text1">
-  <h1>VĂ POFTIM LA</h1>
+  <!--BACKGROUND-->
+
+  <div class="backgroundImg">
+
+    <img src="images/img3.jpg" class="cover">
+
   </div>
-  
-  <div class="text2"> <h1>CRISTY'S TRATTORIA</h1></div>
+  <div class="centered">
+
+    <div class="text1">
+      <h1>VĂ POFTIM LA</h1>
+    </div>
+
+    <div class="text2">
+      <h1>CRISTY'S TRATTORIA</h1>
+    </div>
+
   </div>
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
+
+  <h1 class="boldHead">Meniul Nostru</h1>
+
+  <div class="grid">
+    <div class="group">
+      <img src="images/img3.jpg" alt="cover" width="300" height="100">
+      <div class="gridspace">
+        <h4 class="mediumtext">Roma Burger</h4>
+        <p class = "smalltext">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+          totam, doloribus eum impedit atque! Temporibus...</p>
+      </div>
+    </div>
+    <div class="group">
+      <img src="images/img3.jpg" alt="cover" width="300" height="100">
+      <div class="gridspace">
+        <h4 class="mediumtext">Roma Burger</h4>
+        <p class = "smalltext">Laborum saepe laudantium in, voluptates ex placeat quo harum aliquam
+          totam, doloribus eum impedit atque! Temporibus...</p>
+      </div>
+    </div>
+  </div>
 
 
+
+
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
+  <script src="events.js"></script>
 </body>
