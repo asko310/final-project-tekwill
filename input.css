@@ -57,7 +57,12 @@
     transition: background-size .5s ease-in-out;
 }
 
-
+.backgroundImg{
+    width: max-content;
+    object-fit: cover;
+    object-fit: contain;
+    height: 200px;
+}
 
 .link-underline:hover {
     background-size: 100% 3px;
