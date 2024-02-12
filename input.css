@@ -71,6 +71,7 @@
     top: -80px;
 }
 .cover{
+    filter: brightness(60%);
     object-fit: cover;
     height: 500px;
     width: 100%;
