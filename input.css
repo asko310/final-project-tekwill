@@ -10,7 +10,7 @@
 
 
 .list1{
-    z-index: 5;
+    z-index: 6;
     background-color: var(--backgroundB);
     font-weight: 600;
     font-family: var(--family);
@@ -22,7 +22,7 @@
 }
 
 .logo{
-    z-index: 7;
+    z-index: 4;
     position: relative;
     top: 50px;
     z-index: 50;
@@ -37,7 +37,7 @@
     padding-right: 15px;
 }
 .curved{
-    z-index: 5;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     display: flex;
