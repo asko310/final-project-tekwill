@@ -155,6 +155,16 @@ body{
 
 }
 
+.group{
+    display: flex;
+    margin-left: 24px;
+    justify-content: space-around;
+}
+
+.gridspace{
+    
+}
+
 
 
 
