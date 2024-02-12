@@ -10,6 +10,7 @@
 
 
 .list1{
+    z-index: 5;
     background-color: var(--backgroundB);
     font-weight: 600;
     font-family: var(--family);
@@ -21,6 +22,7 @@
 }
 
 .logo{
+    z-index: 7;
     position: relative;
     top: 50px;
     z-index: 50;
@@ -35,6 +37,7 @@
     padding-right: 15px;
 }
 .curved{
+    z-index: 5;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -57,11 +60,20 @@
     transition: background-size .5s ease-in-out;
 }
 
+
 .backgroundImg{
-    width: max-content;
-    object-fit: cover;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     object-fit: contain;
-    height: 200px;
+    position: relative;
+    top: -100px;
+}
+.cover{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
 }
 
 .link-underline:hover {
