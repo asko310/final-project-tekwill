@@ -25,6 +25,14 @@ body{
     
 }
 
+.mobile-menu{
+  display: none;
+}
+
+.curved2{
+  display: none;
+}
+
 .logo{
     z-index: 4;
     position: relative;
@@ -398,36 +406,45 @@ body{
 }
 
 
-@media  screen and (max-width: 600px){
-    
 
+@media  screen and (max-width: 600px){
+
+
+  
     .list1{
       display: none;
     }
     .mobile-menu{
+        background-color: var(--backgroundB);
+        z-index: 6;
         align-items: center;
         justify-content: center;
         display: block;
         position: relative;
+        text-align: center;
         padding-bottom: 50px;
-        padding-top: 35px;
+        display: none;
     }
 
     .logo{
         display: none;
     }
 
-    .list1 li{
-        padding-top: 15px;
-        text-align: center;
-    }
 
-    .curved{
-    justify-content: center;
-    display: flex;
-    position: relative;
-    width: 100%;
-    top: 0px;
+    .mobile-menu li{
+      color: var(--text-color);
+      padding: 15px 0px 15px 0px;
+      font-weight: 800;
+  }
+
+    .curved {display: none;}
+    .curved2{
+      justify-content: center;
+      display: flex;
+      position: relative;
+      width: 100%;
+      top: 0px;
+      z-index: 6;
 
 }
 
@@ -444,7 +461,7 @@ body{
     background-color: var(--backgroundB);
     display: inline-block;
     cursor: pointer;
-
+    z-index: 6;
   }
   
   .bar1, .bar2, .bar3 {
