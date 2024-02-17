@@ -416,7 +416,7 @@ body{
     }
     .mobile-menu{
         background-color: var(--backgroundB);
-        z-index: 6;
+        top: -10px;
         align-items: center;
         justify-content: center;
         display: block;
@@ -424,6 +424,8 @@ body{
         text-align: center;
         padding-bottom: 50px;
         display: none;
+        z-index: 6;
+
     }
 
     .logo{
@@ -443,7 +445,7 @@ body{
       display: flex;
       position: relative;
       width: 100%;
-      top: 0px;
+      top: -10px;
       z-index: 6;
 
 }
@@ -460,6 +462,7 @@ body{
     padding-left: 24px;
     background-color: var(--backgroundB);
     display: inline-block;
+    position: relative;
     cursor: pointer;
     z-index: 6;
   }
@@ -486,14 +489,24 @@ body{
   .footer-left, .footer-right {
     flex-basis: 100%;
 }
+
+.backgroundImg{
+  position: relative;
+  z-index: 2;
 }
+
 
 .footer-left ul, .footer-right ul {
-list-style-type: none;
-padding: 0;
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  .footer-left li, .footer-right li {
+  margin-bottom: 10px;
+  
+  }
+
 }
 
-.footer-left li, .footer-right li {
-margin-bottom: 10px;
 
-}
+

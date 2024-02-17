@@ -1,13 +1,22 @@
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-}, { threshold: 0.5 }); // Adjust threshold as needed
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach(el => observer.observe(el));
-
+// listener pentru mobile menu
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("hamburger-button");
+  
+    const menu = document.getElementById("mobile-menu");
+  
+    const toggleMenu = () => {
+      menu.classList.toggle("block");
+    };
+  
+    burger.addEventListener("click", toggleMenu);
+    menu.addEventListener("click", toggleMenu);
+  });
+  
+  //funcții chemate de butoane pentru contact în footer
+  function sendEmail() {
+    window.location = "mailto:inima.codrilor@gmail.com";
+  }
+  
+  function callInima() {
+    window.location = "tel:+373 67300500";
+  }

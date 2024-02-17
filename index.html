@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <title>home</title>
-  <script defer src="app.js"></script>
+
 </head>
 
 
@@ -16,7 +16,12 @@
 <body>
 
 
+  <div class="container" id="hamburger-button" onclick="myFunction(this)">
 
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
 
   <nav>
     <!--NAVBAR-->
@@ -45,16 +50,11 @@
   </nav>
 
   <!--Pentru telefon-->
-  <div class="container" id="hamburger-button" onclick="myFunction(this)">
 
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
   <nav>
     <!--NAVBAR-->
 
-    <ul class="mobile-menu">
+    <ul class="mobile-menu" id="mobile-menu">
       <li class="link-underline">
         <a href="index.html">ACASĂ</a>
       </li>
@@ -318,7 +318,7 @@
     }
   </script>
 
-
+<script src="app.js"></script>
 </body>
 
 </html>
