@@ -611,7 +611,9 @@ body{
   justify-items: center;
   
 }
-
+.footer{
+  display: none;
+}
 
 .footer-left ul, .footer-right ul {
   list-style-type: none;
