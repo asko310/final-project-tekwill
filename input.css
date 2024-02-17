@@ -409,8 +409,14 @@ body{
 
 @media  screen and (max-width: 600px){
 
+    .divider{
+      display: flex;
+      padding: 10px 0px 14px 0px;
+    }
+    .aligner{
+      padding-top: 10px;
+    }
 
-  
     .list1{
       display: none;
     }
@@ -422,9 +428,17 @@ body{
         display: block;
         position: relative;
         text-align: center;
-        padding-bottom: 50px;
+        padding: 24px 0px 24px 0px;
         display: none;
         z-index: 6;
+
+    }
+    .logomobile{
+      position: relative;
+      left: 240px;
+      width: 180px;
+      display: flex ;  
+      justify-content: right;
 
     }
 
@@ -459,7 +473,7 @@ body{
 
 
 .container {
-    padding-left: 24px;
+    padding-left: 26px;
     background-color: var(--backgroundB);
     display: inline-block;
     position: relative;
@@ -490,9 +504,112 @@ body{
     flex-basis: 100%;
 }
 
-.backgroundImg{
+
+.text1{
+  font-weight: 600;
+  font-size: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  background-color: var(--text-color);
+  color: var(--backgroundB);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  top: -340px;
+  left: 30px;
+}
+.text2{
+  font-weight: 600;
+  font-size: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin-top: 132px;
+  background-color: var(--text-color);
+  color: var(--backgroundB);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  top: -364px;
+  left: -110px;
+}
+
+.centered{
+
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.holder{
   position: relative;
   z-index: 2;
+}
+
+.center{
+  padding-top: 80px;
+  display: block;
+}
+.grid-container {
+  padding-bottom: 250px;
+  max-width: 1200px;
+  display: block;
+  align-items: center;
+  justify-items: center;
+}
+.grid-item {
+  margin: 30px 20px 30px 20px;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  display: flex;
+
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+.text-content {
+  padding-right: 20px;
+  flex: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.imgicon {
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  object-fit: cover;
+  width: 160px;
+}
+
+
+
+  
+.container3{
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.contact-info {
+  margin-top: 40px;
+  height: 400px;
+  background-color: var(--text-color);
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  justify-items: center;
+  
 }
 
 
