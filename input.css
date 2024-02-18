@@ -283,7 +283,7 @@ body{
   }
   
   .testimonial-content {
-
+    
     background-color: var(--backgroundB);
     height: 300px;
     display: flex;
@@ -305,6 +305,7 @@ body{
     width: 460px;
     align-content: center;
     position: relative;
+    z-index: 2;
     top: -34px;
   }
 
@@ -327,10 +328,12 @@ body{
   }
 
   .testimonial-text {
+    position: relative;
     color: var(--backgroundW);
     flex-grow: 1;
     font-size: 1rem;
     line-height: 1.25rem;
+    z-index: 6;
   }
 
 
