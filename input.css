@@ -63,7 +63,7 @@ body{
 }
 
 .link-underline {
-    border-radius: 24px;
+    border-radius: 28px;
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent), linear-gradient(var(--text-color), var(--text-color));
     background-size: 0 3px;
@@ -142,7 +142,7 @@ body{
     font-size: 44px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
+    border-radius: 22px;
     border-bottom-right-radius: 0px;
     background-color: var(--text-color);
     z-index: 6;
@@ -160,7 +160,7 @@ body{
     font-size: 44px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
+    border-radius: 22px;
     border-top-left-radius: 0px;
     margin-top: 132px;
     background-color: var(--text-color);
@@ -232,7 +232,7 @@ body{
     justify-items: center;
 }
 .grid-item {
-    border-radius: 10px;
+    border-radius: 22px;
     background-color: var(--text-color);
     display: flex;
 
@@ -250,7 +250,7 @@ body{
 }
 
 .imgicon {
-    border-radius: 10px;
+    border-radius: 22px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     object-fit: cover;
@@ -283,16 +283,31 @@ body{
   }
   
   .testimonial-content {
-    height: 300px;
+
     background-color: var(--backgroundB);
+    height: 300px;
     display: flex;
     padding: 24px;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 22px;
     padding-bottom: 40px;
   }
   
+.framecenter{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+  .frame2{
+    display: flex;
+    width: 460px;
+    align-content: center;
+    position: relative;
+    top: -34px;
+  }
+
   .quote{
     width: 36px;
     padding-bottom: 20px;
@@ -320,7 +335,7 @@ body{
 
 
   .swiper .swiper-pagination .swiper-pagination-bullet {
-    background-color: var(--backgroundW);
+    background-color: var(--backgroundB);
   }
   
   .swiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -373,7 +388,7 @@ body{
     height: 400px;
     background-color: var(--text-color);
     padding: 24px;
-    border-radius: 10px;
+    border-radius: 22px;
     text-align: center;
     display: block;
     justify-items: center;
@@ -454,10 +469,13 @@ body{
 
 .flip {
   transform: rotate(180deg);
-  top: 20px;
+  position: relative;
+  top: 4px;
 }
 
-
+.curved3{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
 
     .divider{
@@ -510,10 +528,21 @@ body{
       display: flex;
       position: relative;
       width: 100%;
-      top: 4px;
+      top: -12px;
       z-index: 6;
 
 }
+
+.curved3{
+  justify-content: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+  top: -20px;
+  z-index: 6;
+}
+
+
 
 .line {
     width: 25px;
@@ -538,7 +567,7 @@ body{
     background-color: var(--text-color);
     margin: 6px 0;
     transition: 0.4s;
-    border-radius: 25px;
+    border-radius: 22px;
   }
   
   .change .bar1 {
@@ -561,7 +590,7 @@ body{
   font-size: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  border-radius: 10px;
+  border-radius: 22px;
   border-bottom-right-radius: 0px;
   background-color: var(--text-color);
   color: var(--backgroundB);
@@ -578,7 +607,7 @@ body{
   font-size: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  border-radius: 10px;
+  border-radius: 22px;
   border-top-left-radius: 0px;
   margin-top: 118px;
   background-color: var(--text-color);
@@ -619,7 +648,7 @@ body{
   width: 350px;
   height: 160px;
   margin: 30px 20px 30px 20px;
-  border-radius: 10px;
+  border-radius: 22px;
   background-color: var(--text-color);
   display: flex;
 
@@ -641,7 +670,7 @@ body{
 }
 
 .imgicon {
-  border-radius: 10px;
+  border-radius: 22px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   object-fit: cover;
@@ -661,7 +690,7 @@ body{
   margin-top: 40px;
   height: 400px;
   background-color: var(--text-color);
-  border-radius: 10px;
+  border-radius: 22px;
   text-align: center;
   display: block;
   justify-items: center;
