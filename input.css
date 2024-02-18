@@ -91,6 +91,39 @@ body{
     top: -80px;
 }
 
+.brush{
+  height: 190px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+  top:516px;
+  transform: rotate(3deg);
+  align-items: center;
+  display:inline-block;
+  align-content: middle;
+}
+.brush2{
+  width: 1500px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+  padding-top: 170px;
+  padding-left: 0;
+  align-items: center;
+  display:inline-block;
+  align-content: middle;
+
+}
+
+
+.center2{
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .cover{
     white-space: nowrap;
     filter: brightness(60%);
@@ -622,6 +655,29 @@ body{
   
   .footer-left li, .footer-right li {
   margin-bottom: 10px;
+  
+  }
+
+  .brush{
+    height: 200px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    top:320px;
+    transform: rotate(0deg);
+    align-items: center;
+    display:inline-block;
+    align-content: middle;
+  }
+  .brush2{
+    width: 462px;
+    height: 600px;
+    position: absolute;
+    object-fit: contain;
+    z-index: 2;
+    padding-top: 190px;
+    display:flex;
+
   
   }
 
