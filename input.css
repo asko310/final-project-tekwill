@@ -183,10 +183,23 @@ body{
 }
 
 .boldHead{
-    font-weight: 600;
+    font-weight: 800;
     font-size: 44px;
     color: var(--backgroundB);
     text-align: center;
+}
+
+.idk{
+  display: flex;
+  justify-content: center;
+
+}
+
+.frame{
+  display: flex;
+  width: 460px;
+  position: relative;
+  top: 110px;
 }
 .mediumHeadL{
     font-weight: 600;
@@ -202,7 +215,7 @@ body{
     padding-top: 10px;
 }
 .center{
-    padding-top: 80px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -590,8 +603,9 @@ body{
 }
 
 .center{
-  padding-top: 80px;
-  display: block;
+  padding-top: 20px;
+  display: flex;
+
 }
 .grid-container {
   padding-bottom: 250px;
@@ -687,6 +701,23 @@ body{
     margin: 0;
 
   
+  }
+
+  .idk{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .frame{
+    display: flex;
+    width: 260px;
+    position: relative;
+    top: 60px;
+  }
+
+  .boldHead{
+    font-size: 26px;
   }
 
   .lightxt{
