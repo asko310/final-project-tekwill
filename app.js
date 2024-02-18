@@ -12,11 +12,3 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.addEventListener("click", toggleMenu);
   });
   
-  //funcții chemate de butoane pentru contact în footer
-  function sendEmail() {
-    window.location = "mailto:inima.codrilor@gmail.com";
-  }
-  
-  function callInima() {
-    window.location = "tel:+373 67300500";
-  }

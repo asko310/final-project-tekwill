@@ -600,7 +600,8 @@ body{
   justify-items: center;
 }
 .grid-item {
-
+  width: 350px;
+  height: 160px;
   margin: 30px 20px 30px 20px;
   border-radius: 10px;
   background-color: var(--text-color);
@@ -608,7 +609,7 @@ body{
 
 }
 .lightHeadL{
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .grid-item img {
@@ -676,11 +677,12 @@ body{
     align-content: middle;
   }
   .brush2{
-    height: 300px;
+    width: 800px;
+    height: 600px;
     position: absolute;
     object-fit: cover;
     z-index: 2;
-    padding-top: 170px;
+    padding-top: 154px;
     display:block;
     margin: 0;
 
