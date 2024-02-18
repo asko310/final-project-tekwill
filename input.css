@@ -183,10 +183,12 @@ body{
 }
 
 .boldHead{
+  position: relative;
     font-weight: 800;
     font-size: 44px;
-    color: var(--backgroundB);
+    color: var(--backgroundW);
     text-align: center;
+    z-index: 6;
 }
 
 .idk{
@@ -717,7 +719,7 @@ body{
   }
 
   .boldHead{
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .lightxt{
