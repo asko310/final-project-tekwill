@@ -74,8 +74,6 @@ body{
 
 
 
-
-
 .link-underline:hover {
     background-size: 100% 3px;
     background-position: 0 100%
@@ -89,6 +87,7 @@ body{
     object-fit: cover;
     position: relative;
     top: -80px;
+    
 }
 
 .brush{
@@ -102,6 +101,7 @@ body{
   align-items: center;
   display:inline-block;
   align-content: middle;
+  
 }
 .brush2{
   width: 1300px;
@@ -177,7 +177,8 @@ body{
 }
 
 .centered{
-
+  max-width: 1600px;
+  margin: auto;
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -260,7 +261,6 @@ body{
 
 .container2 {
     margin: 0;
-    max-width: 1600px;
     display:flex;
     position: relative;
     padding-left: 1.25rem;
@@ -268,6 +268,8 @@ body{
     padding-top: 6rem;
     padding-bottom: 6rem;
     flex-wrap: wrap;
+    max-width: 1600px;
+    margin: auto;
     
   }
   
@@ -379,6 +381,7 @@ body{
 
   
   .container3{
+    margin: auto;
     max-width: 1600px;
     text-align: center;
     display: grid;
@@ -418,16 +421,18 @@ body{
 
 
 .footer {
+  
   background-color: var(--backgroundB);
   color: var(--backgroundW);
   padding: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1600px;
+  margin: auto;
 }
 
 .tot{
+  
   display: flex;
   justify-content: center;
   align-content: center;
@@ -480,6 +485,60 @@ body{
 .curved3{
   display: none;
 }
+
+
+.despre {
+  left: 30px;
+}
+
+
+  .description {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    gap: 40px;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .text h1 {
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  
+  .text p {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--backgroundB);
+    text-align: left;
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+
 @media only screen and (max-width: 768px) {
 
     .divider{
@@ -779,6 +838,18 @@ body{
     transform: scale(1.3);
     color: var(--backgroundW);
     font-size: 36px;
+}
+.despre {
+  left: -10px;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.text, .image {
+  width: 100%;
+  padding: 10px;
 }
 }
 
