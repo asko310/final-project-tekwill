@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="components.js" type="module"></script>
+    <script src="app.js"></script>
+    <title>DESPRE NOI</title>
+</head>
+<body>
+    <div class="container" id="hamburger-button" onclick="myFunction(this)" >
+        <div class="divider">
+          <div class="aligner">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="logomobile1">
+            <img src="/images/Logoo.svg" class="logomobile">
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      <nav >
+        <!--NAVBAR-->
+        <ul class="list1">
+          <li class="link-underline">
+            <a href="index.html">ACASĂ</a>
+          </li>
+          <li class="link-underline">
+            <a href="despre.html">DESPRE
+              NOI</a>
+          </li>
+          <div>
+            <img class="logo" src="images/Logo.svg">
+          </div>
+          <li class="link-underline">
+            <a href="meniu.html">MENIU</a>
+          </li>
+          <li class="link-underline">
+            <a href="contacte.html">CONTACTE</a>
+          </li>
+        </ul>
+    
+        <img src="./images/svg1.svg" class="curved">
+    
+    
+      </nav>
+    
+      <!--Pentru telefon-->
+    
+      <nav>
+        <!--NAVBAR-->
+    
+        <ul class="mobile-menu" id="mobile-menu">
+          <li class="link-underline">
+            <a href="index.html">ACASĂ</a>
+          </li>
+          <li class="link-underline">
+            <a href="despre-noi.html">DESPRE
+              NOI</a>
+          </li>
+          <div>
+            <img class="logo" src="images/Logo.svg">
+          </div>
+          <li class="link-underline">
+            <a href="meniu.html">MENIU</a>
+          </li>
+          <li class="link-underline">
+            <a href="contacte.html">CONTACTE</a>
+          </li>
+        </ul>
+    
+        <img src="./images/svg1.svg" class="curved2">
+        <img src="./images/svg1.svg" class="curved3">
+    
+    
+      </nav>
+
+
+        <!--BACKGROUND-->
+  <div class="holder">
+    <div class="backgroundImg">
+
+      <img src="images/img3.jpg" class="cover">
+
+    </div>
+
+    <div class="centered">
+      <img src="/images/brushes/whitebrushlong.svg" class="brush">
+      <div class="text1">
+        <h1>MENIUL</h1>
+      </div>
+
+      <div class="text2 despre">
+        <h1>NOSTRU</h1>
+      </div>
+    </div>
+
+    <div class="menu-container">
+        <!-- Category list -->
+        <ul class="category-list">
+          <!-- Category item -->
+          <li class="category-item active" onclick="showCategory('all')">Toate</li>
+          <!-- Add more category items here -->
+          <li class="category-item" onclick="showCategory('salate')">Salate</li>
+          <li class="category-item" onclick="showCategory('pizza')">Pizza</li>
+          <li class="category-item" onclick="showCategory('supe')">Supe</li>
+          <li class="category-item" onclick="showCategory('pasta')">Pasta</li>
+          <li class="category-item" onclick="showCategory('fast')">Fast-food</li>
+          <li class="category-item" onclick="showCategory('calde')">Mâncăruri calde</li>
+          <li class="category-item" onclick="showCategory('placinte')">Plăcinte moldovenești</li>
+        </ul>
+      
+        <!-- Menu items -->
+        <div class="menu-items">
+          <!-- Sample menu items -->
+          <!-- Salate -->
+          <div class="menu-item salate">
+            <img src="https://palmanova.ro/wp-content/uploads/2020/03/6482-600x390.jpg" alt="Salată Venetia">
+            <h3>Salată Venetia</h3>
+            <p>200gr roșii, castraveți, ardei grași, frunză mix de salată.</p>
+            <span>40 lei</span>
+          </div>
+      
+          <!-- Pizza -->
+          <div class="menu-item pizza">
+            <img src="https://th.bing.com/th/id/R.f87d4128f423cc5d2319eece9f1c0793?rik=tKFBx5BcyRYXdg&pid=ImgRaw&r=0" alt="Pizza Rancho">
+            <h3>Pizza Rancho</h3>
+            <p>680 gr, Sos de roșii, mozarella, roșii, ciuperci, ardei, șuncă, salam.</p>
+            <span>115 lei</span>
+          </div>
+      
+          <!-- Add more menu items here -->
+        </div>
+      </div>
+      
+      <!-- JavaScript Code -->
+      <script>
+        function showCategory(category) {
+          // Hide all menu items
+          var menuItems = document.querySelectorAll('.menu-item');
+          menuItems.forEach(function(item) {
+            item.style.display = 'none';
+          });
+      
+          // Show menu items of the selected category
+          var categoryItems = document.querySelectorAll('.menu-item.' + category);
+          categoryItems.forEach(function(item) {
+            item.style.display = 'block';
+          });
+        }
+      </script>
+</body>
+</html>
