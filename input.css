@@ -513,6 +513,28 @@ body{
     gap: 90px;
   }
   
+.mapa{
+  border-radius: 22px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 300px;
+
+}
+
+.mapatxt{
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  background-color: var(--backgroundB);
+  margin: auto;
+  width: 1200px;
+  color: var(--backgroundW);
+}
+.mapacont{
+  margin: auto;
+}
+
   .text {
     flex: 1;
   }
@@ -849,6 +871,25 @@ body{
 .text, .image {
   width: 100%;
 
+}
+
+.mapa{
+  border-radius: 22px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 300px;
+
+}
+
+.mapatxt{
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  background-color: var(--backgroundB);
+  margin: auto;
+  width: 300px;
+  color: var(--backgroundW);
 }
 }
 
