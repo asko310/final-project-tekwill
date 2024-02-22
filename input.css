@@ -563,7 +563,7 @@ body{
     margin: auto;
   }
 
-  /* Category list */
+  /* Category */
   .category-list {
     align-items: center;
     padding-top: 12px;
@@ -572,7 +572,7 @@ body{
     white-space: nowrap;
     width: 1070px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .category-item {
@@ -633,6 +633,23 @@ body{
   
 
 @media only screen and (max-width: 768px) {
+  /*category mobile */
+  .category-list {
+    align-items: center;
+    padding-top: 12px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .menu-container{
+    padding-right: 20px;
+  }
+  .menu-items{
+    display: inline-block;
+  }
 
     .divider{
       display: flex;
