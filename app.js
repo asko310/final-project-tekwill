@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.display = 'none';
     });
 
-    // arata in dependenta de categorie
+    // arata in dependenta de categories
     var categoryItems = document.querySelectorAll('.menu-item.' + category);
     categoryItems.forEach(function(item) {
       item.style.display = 'block';
