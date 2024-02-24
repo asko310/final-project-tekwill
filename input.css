@@ -395,7 +395,7 @@ body{
 
   .boldtxt{
     font-weight: 800;
-    font-size: 40px;
+    font-size: 36px;
     color: var(--backgroundB);
     text-align: center;
   }
