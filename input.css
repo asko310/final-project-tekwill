@@ -984,8 +984,8 @@ body{
   border-radius: 22px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  width: 360px;
-  height: 360px;
+  width: 340px;
+  height: 340px;
   margin: auto;
   margin-bottom: 300px;
 
@@ -996,7 +996,7 @@ body{
   border-top-right-radius: 22px;
   background-color: var(--backgroundB);
   margin: auto;
-  width: 360px;
+  width: 340px;
   color: var(--backgroundW);
 }
 
