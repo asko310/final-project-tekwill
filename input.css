@@ -13,6 +13,15 @@ body{
     background-color: var(--backgroundW);
 }
 
+
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+.show{
+  opacity: 1;
+}
+
 .list1{
     z-index: 6;
     background-color: var(--backgroundB);
@@ -226,7 +235,7 @@ body{
 }
 .grid-container {
   padding-top: 60px;
-    padding-bottom: 250px;
+    padding-bottom: 0px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -276,7 +285,7 @@ body{
   }
   
   .swiper {
-    width: 100%;
+    width: 1200px;
     height: 100%;
   }
   
@@ -370,7 +379,6 @@ body{
 .effect:hover {
     transform: scale(1.3);
     color: var(--backgroundW);
-    font-size: 50px;
 }
 
   .boldtxt{
@@ -384,7 +392,7 @@ body{
   
   .container3{
     margin: auto;
-    max-width: 1600px;
+    max-width: 1200px;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -636,6 +644,32 @@ body{
     color: #956841;
     margin-top: auto;
   }
+
+  .buton{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--backgroundB);
+    border-radius: 22px;
+    color: var(--text-color);
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    font-weight: 800;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  }
+  .buton:hover{
+    transform: scale(1.3);
+    background-color: #ebd5b0;
+    color: var(--backgroundB);
+  }
+
+
   
 
 @media only screen and (max-width: 768px) {
@@ -667,6 +701,21 @@ body{
   }
 
 
+
+  .buton{
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-weight: 800;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  }
+  .buton:hover{
+    transform: scale(1.2);
+    background-color: #ebd5b0;
+    color: var(--backgroundB);
+  }
 
     .divider{
       display: flex;
@@ -831,7 +880,7 @@ body{
 
 }
 .grid-container {
-  padding-bottom: 250px;
+  padding-bottom: 0px;
   display: block;
   align-items: center;
   justify-items: center;
