@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  //menu
+
   function showCategory(category) {
     //ascunde
     var menuItems = document.querySelectorAll('.menu-item');
