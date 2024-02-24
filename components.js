@@ -6,7 +6,7 @@ template.innerHTML = `
 
 `;
 
-//this is the web component
+//1st web component
 class NavBar extends HTMLElement{
     constructor(){
         super();
@@ -18,20 +18,6 @@ class NavBar extends HTMLElement{
 
 customElements.define('nav-bar', NavBar);
 
-//
-//const observer = new IntersectionObserver((entries) => {
-    //entries.forEach((entry) => {
-        //console.log(entry)
-        //if (entry.isIntersecting) {
-           // entry.target.classList.add('show');
-       // } else {
-       //     entry.target.classList.remove('show');
-      //  }
-  //  });
-//});
-
-//const hiddenElements = document.querySelectorAll('.hidden');
-//hiddenElements.forEach((el) => observer.observe(el));
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -41,10 +27,10 @@ const observer = new IntersectionObserver((entries, observer) => {
       }
     });
   }, {
-    threshold: 0.5 // Adjust threshold as needed
+    threshold: 0.5 
   });
   
-  // Observe grid items
+  // Observer
   document.querySelectorAll('.scroll').forEach(item => {
     observer.observe(item);
   });

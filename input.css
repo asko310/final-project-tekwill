@@ -25,12 +25,12 @@ body{
   }
 }
 
-/* Apply initial styles */
+/* scroll effect */
 .scroll {
   opacity: 0;
 }
 
-/* Apply animation when in viewport */
+/* animatie pt scroll */
 .scroll.animate {
   animation: slideInFromLeft 1s ease-out forwards;
 }
@@ -585,7 +585,7 @@ body{
     margin: auto;
   }
 
-  /* Category */
+  /* Categorii */
   .category-list {
     align-items: center;
     padding-top: 12px;
@@ -685,7 +685,7 @@ body{
   
 
 @media only screen and (max-width: 768px) {
-  /*category mobile */
+  /* mobile */
   .category-list {
     align-items: center;
     padding-top: 12px;
