@@ -225,6 +225,7 @@ body{
     align-items: center;
 }
 .grid-container {
+  padding-top: 60px;
     padding-bottom: 250px;
     max-width: 1200px;
     display: grid;
@@ -234,6 +235,7 @@ body{
     justify-items: center;
 }
 .grid-item {
+  height: 200px;
     border-radius: 22px;
     background-color: var(--text-color);
     display: flex;
@@ -265,7 +267,7 @@ body{
     position: relative;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    padding-top: 6rem;
+    padding-top: 130px;
     padding-bottom: 6rem;
     flex-wrap: wrap;
     max-width: 1600px;
@@ -995,6 +997,10 @@ body{
   margin: auto;
   width: 300px;
   color: var(--backgroundW);
+}
+
+.container2 {
+  padding-top: 80px;
 }
 }
 
