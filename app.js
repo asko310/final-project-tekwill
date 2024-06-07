@@ -41,3 +41,34 @@ document.addEventListener("DOMContentLoaded", function () {
         const categ = `<H1></H1>`
       });
     })
+
+
+
+        
+const fetchProducts = async () => {
+  const response = await fetch('https://vercel-host-ten.vercel.app/products').then((res) => res.json());
+  return response;
+}
+
+const productshtml = async () => {
+  // facem fetch la produse
+  const products = await fetchProducts();
+  
+  // generam html pentru produse
+  const productshtml = products.map((product) => {
+    return `
+    <div class="menu-item ${product.category} all">
+      <img src="${product.imagine}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.description}</p>
+      <span>${product.price} lei</span>
+    </div>
+    `;
+  }).join(''); // unim toate produsele intr-un singur string
+
+  // adaugam html-ul generat in containerul cu produse
+  document.querySelector('.menu-items').innerHTML = productshtml;
+}
+
+// apelam functia care genereaza html-ul pentru produse
+productshtml();
