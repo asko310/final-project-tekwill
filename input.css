@@ -608,10 +608,12 @@ body{
     transition: background-color 0.3s, color 0.3s;
   }
 
-  .category-item:hover, .category-item.active {
+  .category-item:hover{
     background-color: var(--backgroundW);
     color: var(--backgroundB);
   }
+
+
 
   /* griddd */
   .menu-items {
