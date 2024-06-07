@@ -29,3 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   
+
+
+  //fetch
+  fetch('https://vercel-host-jjldcen45-asko310s-projects.vercel.app/products')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      data.forEach(category =>{
+        const categ = `<H1></H1>`
+      });
+    })
